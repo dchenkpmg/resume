@@ -1,0 +1,215 @@
+%-------------------------
+% Resume in Latex
+% Author : Dylan Chen
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Dylan Chen} \\ \vspace{1pt}
+    \small +64 021-146-8719 $|$ \href{mailto:dche610@aucklanduni.ac.nz}{\underline{dche610@aucklanduni.ac.nz}} $|$ 
+    \href{https://www.linkedin.com/in/dylan-chen-763b15200/}{\underline{linkedin.com/in/dylan-chen-763b15200}}
+\end{center}
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, R, SQL, Bash, JavaScript, HTML/CSS} \\
+     \textbf{Developer Tools}{: Git, Docker, Kubernetes, GitHub, GitHub Actions,  GitLab, Azure, AzureML, Azure DevOps, AWS, Linux, PowerBI, QGIS, CVAT} \\
+     \textbf{Frameworks}{: Tensorflow, Keras, PyTorch, Terraform, Pulumi, Flask, FastAPI, Spark} \\
+     \textbf{Certifications}{: Microsoft Certified: Azure Data Scientist Associate}
+    }}
+ \end{itemize}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+    {Software Engineer}{Feb. 2023 -- Present}
+      {KPMG Lighthouse}{Auckland, New Zealand}
+      \resumeItemListStart
+        \resumeItem{Sped up batch inference for a tax asset classifier by up to 80\% via integrating asychronous calls to OpenAI}  
+        \resumeItem{Served PowerBI dashboards to over 10,000 NZ Police staff by building Spark pipelines in Azure Synapse Analytics}
+        \resumeItem{Reduced monthly spend on cloud infrastructure, saving up to \$4000 USD per month, by migrating two retail analytics applications from AWS EC2 to Azure PaaS (App Service, Container Instance, Blob Storage)}
+        \resumeItem{Implemented data pipelines to classify risky driving behaviour for over 7 million St. John ambulance trips on IBM Cloud using Polars for data transformation and sci-kit learn for unsupervised machine learning}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Machine Learning Engineer Intern}{July 2022 -- Feb. 2023}
+      {Umajin}{Auckland, New Zealand}
+      \resumeItemListStart
+        \resumeItem{Reduced image labelling times by 50\% via deploying and configuring CVAT (image labelling platform) on AWS EC2 with Docker and implementing GPU-accelerated automatic annotation}
+        \resumeItem{Trained and deployed deep learning models which were presented by the CEO to more than 61,000 attendees at MWC 2022, NTT and Starbucks using PyTorch and Keras for model development and Flask for deployment}
+        \resumeItem{Automated the data preprocessing for over 20 different image datasets by developing scripts in Python}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Data Scientist Intern}{Nov. 2021 -- Feb. 2022}
+      {Arup}{Auckland, New Zealand}
+      \resumeItemListStart
+      \resumeItem{Reduced time to validate simulation output by 7 days via implementing traffic volume benchmarks (traffic counter snapshots for different roads) for an agent-based simulation of transport in NZ using Python}
+      \resumeItem{Visualised and presented over 50 proposed transport infrastructure changes to research scientists in the development team by extracting data from AWS EFS and running geospatial queries with QGIS}
+      \resumeItem{Implemented scripts to process over 10 different GIS datasets from sources such as CoreLogic using geopandas}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Stroke Lesion Inpainting for 3D Brain MRI} $|$ \emph{Python, PyTorch, TorchIO}}{Feb. 2022 -- Oct. 2022}
+          \resumeItemListStart
+            \resumeItem{Trained neural networks to inpaint stroke lesions with healthy brain tissue using 500 brain scans in PyTorch}
+            \resumeItem{Applied brain image preprocessing techniques, reducing training time by 2 days using Python and TorchIO}
+
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{TakiWaehere Geospatial Hackathon} $|$ \emph{Python, geopandas, Matplotlib, Keras}}{Feb 2021 -- April 2021}
+          \resumeItemListStart
+          \resumeItem{Researched the NZ Transport Agency Crash Analysis Systems dataset resulting in the identification of 3 features correlated with crashes (speed, weather, lighting) using pandas and Matplotlib}
+          \resumeItem{Gathered and presented research on GIS data in 4 days by showing a live demonstration using Jupyter Notebook}
+          \resumeItem{Developed scripts to preprocess 6 high-resolution satellite images of Auckland provided by Maxar in Python}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+
+ %-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Auckland}{Auckland, NZ}
+      {Bachelor of Engineering (Honours) in Engineering Science}{Feb. 2019 -- Nov. 2022}
+    \resumeItemListStart
+      \resumeItem{First Class Honours - GPA: 7.9/9.0 (A Average)}
+      \resumeItem{Dean's Honours List (2020-2021) - Top 5\% of Engineering Cohort}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
