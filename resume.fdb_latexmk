@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1723620758 "resume.tex" "resume.pdf" "resume" 1723620759
+["pdflatex"] 1723689511 "resume.tex" "resume.pdf" "resume" 1723689512
   "/etc/texmf/web2c/texmf.cnf" 1698109510 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/dylanchen1/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk" 1723601374 11524 5d07f181b6e69e43657331a4a40beef0 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -86,9 +86,9 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1698109663 4036811 4cb80868003c86b962b6b5ae1e1e2902 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1710551781 1405644 999bd4defbf76d80221045ddebbe9543 ""
-  "resume.aux" 1723620759 1197 1ec14c58cdac8b50d18c16963d5f5cf2 "pdflatex"
-  "resume.out" 1723620759 390 c20df0732a26e929d2e5c5462d70cbf8 "pdflatex"
-  "resume.tex" 1723620758 8509 aee91d30c5e7aa3986937a0a640a80af ""
+  "resume.aux" 1723689512 1197 1ec14c58cdac8b50d18c16963d5f5cf2 "pdflatex"
+  "resume.out" 1723689512 390 c20df0732a26e929d2e5c5462d70cbf8 "pdflatex"
+  "resume.tex" 1723689509 8518 3eb174fa332eae94e6b717b3d0d9d059 ""
   (generated)
   "resume.aux"
   "resume.log"
